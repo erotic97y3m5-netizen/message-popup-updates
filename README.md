@@ -1,19 +1,31 @@
 # 消息弹窗 · 更新仓库
 
-用于发布 Windows 消息弹窗软件的安装包、版本信息和更新说明。
+Windows 消息弹窗软件的安装包、版本信息和更新说明。
 
-## 下载与更新
+## 下载
 
-安装包将在 [Releases](https://github.com/erotic97y3m5-netizen/message-popup-updates/releases) 发布。当前正在接入更新功能，未发布的版本不会触发更新提醒。
+[下载消息弹窗 0.4.0 安装包](https://github.com/ivor-cjy/message-popup-updates/releases/download/v0.4.0/MessagePopup-0.4.0-Setup.exe)
 
-软件固定检查以下地址的版本信息：
+[查看版本说明与校验文件](https://github.com/ivor-cjy/message-popup-updates/releases/latest)
 
-`https://raw.githubusercontent.com/erotic97y3m5-netizen/message-popup-updates/main/latest.json`
+适用于 Windows 10/11 x64，安装包包含所需运行环境。
 
-以后发布新版时，在 Releases 上传安装包，验证下载与 SHA256 后，再更新 `latest.json`。同一更新位置可以长期沿用，各台电脑无需重新填写地址。软件只提醒更新，由使用者决定是否下载和安装。
+0.4.0 支持窗口拖动和缩放、图片背景、微信与 QQ 背景独立或共用、联系人和正文分别设置字体与颜色，以及软件更新提醒。背景和字体使用每台电脑的本机设置，不会随更新仓库同步。
 
-## 仓库范围
+## 更新提醒
 
-仅发布安装包、版本信息和使用说明。不上传聊天记录、数据库、账号凭据、日志、背景图片或本机设置。
+另一台电脑首次需安装 0.4.0 或更新版本。安装后默认启动及每 6 小时检查新版本，也可在“通用设置”手动检查或关闭自动检查。只有更高且已发布的版本会触发提醒。
 
-GitHub 暂时无法访问时，软件保留当前版本继续运行，后续再检查更新。
+软件固定检查以下版本信息地址：
+
+`https://raw.githubusercontent.com/ivor-cjy/message-popup-updates/main/latest.json`
+
+以后发布新版时，在 Releases 上传安装包，验证公开下载和 SHA256 后，再更新 `latest.json`。各台电脑沿用同一个更新位置，无需 GitHub 登录。软件校验下载的安装包，由使用者决定是否安装；升级前从托盘退出消息弹窗，再运行安装包。
+
+GitHub 暂时无法访问时，当前版本的消息提醒继续运行，之后再检查更新。
+
+## 数据与兼容性
+
+仓库仅发布安装包、版本信息和说明，不上传聊天记录、数据库、账号凭据、日志、背景图片或本机设置。
+
+本机已通过外观保存、窗口缩放、双平台后台和本地测试通知验证。72 小时长期稳定性尚未验收。微信和 QQ 的内部格式属于外部依赖，客户端升级后仍需重新验证。全新电脑首次连接 QQ 和多种 DPI 组合需要进一步实测。
