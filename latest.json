@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
   "product": "MessagePopup",
-  "available": false,
-  "version": "0.3.1",
+  "available": true,
+  "version": "0.4.0",
   "channel": "stable",
-  "releaseUrl": "https://github.com/erotic97y3m5-netizen/message-popup-updates/releases",
-  "notes": "正在接入更新功能，当前没有可下载的新版本。"
+  "downloadUrl": "https://github.com/ivor-cjy/message-popup-updates/releases/download/v0.4.0/MessagePopup-0.4.0-Setup.exe",
+  "sha256": "eb71de697e83ede346f92dd980ae71bafdf177548aa0dc1cfa993cade380d594",
+  "size": 18788864,
+  "releaseUrl": "https://github.com/ivor-cjy/message-popup-updates/releases/tag/v0.4.0",
+  "notes": "支持图片背景、微信与 QQ 独立或共用背景、分别设置字体与颜色、窗口缩放和更新提醒。"
 }
